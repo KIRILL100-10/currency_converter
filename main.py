@@ -1,7 +1,7 @@
 import requests
 
 def currency_converter(base_currency, target_currency, amount):
-    api_key = 'your_key'
+    api_key = 'your_api_key'
     url = f'https://v6.exchangerate-api.com/v6/{api_key}/pair/{base_currency}/{target_currency}/{amount}'
     try:
         response = requests.get(url)
